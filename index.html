@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Compass Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="./assets/icons/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./assets/styles/main.css">
     <link rel="stylesheet" href="./assets/styles/footer.css">
 </head>
+
 <body>
     <header>
         <div id="header-section">
@@ -29,43 +37,55 @@
                 <li><a href="#"><img class="icon" src="./assets/icons/shopping_cart.svg" alt="carrinho"></a></li>
             </ul>
         </nav>
-    </header> 
-    <img id="main-img" src="./assets/images/Rectangle 1.svg" alt="">
+    </header>
+
+    <main>
+        <div class="banner">
+            <img id="main-img" src="./assets/images/banner.svg" alt="">
+            <div class="title">
+                <h1>Shop</h1>
+                <p> <strong>Home ></strong> Shop</p>
+            </div>
+        </div>
+    </main>
 
     <footer>
         <div id="footer-section-1">
-            <div id="footer-address">
-                <span>footer.</span>
-                <span>Rua Alexandre Dumas, 1711 - 6º andar - Chácara Santo Ântonio, São Paulo - SP,04717-004</span>
+            <div id="footer-address" class="footer-column">
+                <span id="footer-title">footer.</span>
+                <span class="light-grey">Rua Alexandre Dumas, 1711 - 6º andar - Chácara Santo Ântonio, São Paulo -
+                    SP,04717-004</span>
             </div>
-            <div>
-                <span>Links</span>
-                <ul>
+            <div class="footer-column">
+                <span class="subtitle light-grey">Links</span>
+                <ul class="footer-list">
                     <li><a href="#"><span>Home</span></a></li>
                     <li><a href="#"><span>Shop</span></a></li>
                     <li><a href="#"><span>About</span></a></li>
                     <li><a href="#"><span>Contact</span></a></li>
                 </ul>
             </div>
-            <div>
-                <span>Help</span>
-                <ul>
+            <div class="footer-column">
+                <span class="subtitle light-grey">Help</span>
+                <ul class="footer-list">
                     <li><a href="#"><span>Payment Options</span></a></li>
                     <li><a href="#"><span>Returns</span></a></li>
                     <li><a href="#"><span>Privacy Policies</span></a></li>
                 </ul>
             </div>
-            <div>
-                <span>Newsletter</span>
-                <div>
-                    <input type="text" placeholder="Enter Your Email Address">
-                    <button>SUBSCRIBE</button>
+            <div class="footer-column">
+                <span class="subtitle light-grey">Newsletter</span>
+                <div class="inputSubscribe">
+                    <input class="email-input" type="text" placeholder="Enter Your Email Address">
+                    <button class="subscribe-button">SUBSCRIBE</button>
                 </div>
             </div>
         </div>
+        <hr style="color: #D9D9D9;">
         <div id="footer-section-2">
             <span>2024 Compass UOL</span>
         </div>
     </footer>
 </body>
+
 </html>
