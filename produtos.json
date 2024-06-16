@@ -2,216 +2,216 @@
     {
         "name":"Syltherine",
         "description":"Stylish cafe chair",
-        "image":"../../assets/images/products/image1.png",
+        "image":"./assets/images/products/image1.png",
         "price": 3500000,
         "discount":30
     },
     {
         "name":"Leviosa",
         "description":"Stylish cafe chair",
-        "image":"../../assets/images/products/image2.png",
+        "image":"./assets/images/products/image2.png",
         "price":2500000
     },
     {
         "name":"Lolito",
         "description":"Luxury big sofa",
-        "image":"../../assets/images/products/image3.png",
+        "image":"./assets/images/products/image3.png",
         "price":1400000,
         "discount":50
     },
     {
         "name":"Respira",
         "description":"Outdoor bar table and stool",
-        "image":"../../assets/images/products/image4.png",
+        "image":"./assets/images/products/image4.png",
         "price":500000,
         "condition":"new"
     },
     {
         "name":"Syltherine",
         "description":"Stylish cafe chair",
-        "image":"../../assets/images/products/image1.png",
+        "image":"./assets/images/products/image1.png",
         "price": 3500000,
         "discount":30
     },
     {
         "name":"Leviosa",
         "description":"Stylish cafe chair",
-        "image":"../../assets/images/products/image2.png",
+        "image":"./assets/images/products/image2.png",
         "price":2500000
     },
     {
         "name":"Lolito",
         "description":"Luxury big sofa",
-        "image":"../../assets/images/products/image3.png",
+        "image":"./assets/images/products/image3.png",
         "price":1400000,
         "discount":50
     },
     {
         "name":"Respira",
         "description":"Outdoor bar table and stool",
-        "image":"../../assets/images/products/image4.png",
+        "image":"./assets/images/products/image4.png",
         "price":500000,
         "condition":"new"
     },
     {
         "name":"Syltherine",
         "description":"Stylish cafe chair",
-        "image":"../../assets/images/products/image1.png",
+        "image":"./assets/images/products/image1.png",
         "price": 3500000,
         "discount":30
     },
     {
         "name":"Leviosa",
         "description":"Stylish cafe chair",
-        "image":"../../assets/images/products/image2.png",
+        "image":"./assets/images/products/image2.png",
         "price":2500000
     },
     {
         "name":"Lolito",
         "description":"Luxury big sofa",
-        "image":"../../assets/images/products/image3.png",
+        "image":"./assets/images/products/image3.png",
         "price":1400000,
         "discount":50
     },
     {
         "name":"Respira",
         "description":"Outdoor bar table and stool",
-        "image":"../../assets/images/products/image4.png",
+        "image":"./assets/images/products/image4.png",
         "price":500000,
         "condition":"new"
     },
     {
         "name":"Syltherine",
         "description":"Stylish cafe chair",
-        "image":"../../assets/images/products/image1.png",
+        "image":"./assets/images/products/image1.png",
         "price": 3500000,
         "discount":30
     },
     {
         "name":"Leviosa",
         "description":"Stylish cafe chair",
-        "image":"../../assets/images/products/image2.png",
+        "image":"./assets/images/products/image2.png",
         "price":2500000
     },
     {
         "name":"Lolito",
         "description":"Luxury big sofa",
-        "image":"../../assets/images/products/image3.png",
+        "image":"./assets/images/products/image3.png",
         "price":1400000,
         "discount":50
     },
     {
         "name":"Respira",
         "description":"Outdoor bar table and stool",
-        "image":"../../assets/images/products/image4.png",
+        "image":"./assets/images/products/image4.png",
         "price":500000,
         "condition":"new"
     },
     {
         "name":"Syltherine",
         "description":"Stylish cafe chair",
-        "image":"../../assets/images/products/image1.png",
+        "image":"./assets/images/products/image1.png",
         "price": 3500000,
         "discount":30
     },
     {
         "name":"Leviosa",
         "description":"Stylish cafe chair",
-        "image":"../../assets/images/products/image2.png",
+        "image":"./assets/images/products/image2.png",
         "price":2500000
     },
     {
         "name":"Lolito",
         "description":"Luxury big sofa",
-        "image":"../../assets/images/products/image3.png",
+        "image":"./assets/images/products/image3.png",
         "price":1400000,
         "discount":50
     },
     {
         "name":"Respira",
         "description":"Outdoor bar table and stool",
-        "image":"../../assets/images/products/image4.png",
+        "image":"./assets/images/products/image4.png",
         "price":500000,
         "condition":"new"
     },
     {
         "name":"Syltherine",
         "description":"Stylish cafe chair",
-        "image":"../../assets/images/products/image1.png",
+        "image":"./assets/images/products/image1.png",
         "price": 3500000,
         "discount":30
     },
     {
         "name":"Leviosa",
         "description":"Stylish cafe chair",
-        "image":"../../assets/images/products/image2.png",
+        "image":"./assets/images/products/image2.png",
         "price":2500000
     },
     {
         "name":"Lolito",
         "description":"Luxury big sofa",
-        "image":"../../assets/images/products/image3.png",
+        "image":"./assets/images/products/image3.png",
         "price":1400000,
         "discount":50
     },
     {
         "name":"Respira",
         "description":"Outdoor bar table and stool",
-        "image":"../../assets/images/products/image4.png",
+        "image":"./assets/images/products/image4.png",
         "price":500000,
         "condition":"new"
     },
     {
         "name":"Syltherine",
         "description":"Stylish cafe chair",
-        "image":"../../assets/images/products/image1.png",
+        "image":"./assets/images/products/image1.png",
         "price": 3500000,
         "discount":30
     },
     {
         "name":"Leviosa",
         "description":"Stylish cafe chair",
-        "image":"../../assets/images/products/image2.png",
+        "image":"./assets/images/products/image2.png",
         "price":2500000
     },
     {
         "name":"Lolito",
         "description":"Luxury big sofa",
-        "image":"../../assets/images/products/image3.png",
+        "image":"./assets/images/products/image3.png",
         "price":1400000,
         "discount":50
     },
     {
         "name":"Respira",
         "description":"Outdoor bar table and stool",
-        "image":"../../assets/images/products/image4.png",
+        "image":"./assets/images/products/image4.png",
         "price":500000,
         "condition":"new"
     },
     {
         "name":"Syltherine",
         "description":"Stylish cafe chair",
-        "image":"../../assets/images/products/image1.png",
+        "image":"./assets/images/products/image1.png",
         "price": 3500000,
         "discount":30
     },
     {
         "name":"Leviosa",
         "description":"Stylish cafe chair",
-        "image":"../../assets/images/products/image2.png",
+        "image":"./assets/images/products/image2.png",
         "price":2500000
     },
     {
         "name":"Lolito",
         "description":"Luxury big sofa",
-        "image":"../../assets/images/products/image3.png",
+        "image":"./assets/images/products/image3.png",
         "price":1400000,
         "discount":50
     },
     {
         "name":"Respira",
         "description":"Outdoor bar table and stool",
-        "image":"../../assets/images/products/image4.png",
+        "image":"./assets/images/products/image4.png",
         "price":500000,
         "condition":"new"
     }
