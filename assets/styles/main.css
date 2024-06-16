@@ -82,3 +82,32 @@ main {
         }
     }
 }
+
+#id-banner-2 {
+    max-width: 100vw;
+    max-height: 270px;
+    background-color: #FAF3EA;
+    padding: 100px 53px;
+    
+    ul{
+        display: flex;
+        gap: 55.33px;
+        
+        li{
+            display: flex;
+            gap: 10px;
+        }
+    }
+}
+
+.title-banner-2 {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.teste222 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #898989;
+
+}

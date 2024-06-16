@@ -6,7 +6,6 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
 }
 
 #footer-address {
@@ -64,6 +63,7 @@ ul {
     input {
         border-bottom: 1px solid black;
         width: 250px;
+        padding: 5px;
     }
 
     button {
@@ -74,6 +74,16 @@ ul {
 
         &:hover {
             background-color: #9F9F9F;
+        }
+    }
+}
+
+.footer-column{
+    li{
+        a{
+            span{
+                font-weight: 500;
+            }
         }
     }
 }
