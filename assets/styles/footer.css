@@ -74,3 +74,7 @@ ul {
 .footer-column li a span{
     font-weight: 500;
 }
+
+#email-msg {
+    padding-left: 10px;
+}
