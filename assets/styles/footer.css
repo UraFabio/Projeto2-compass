@@ -1,80 +1,80 @@
 footer {
-    padding: 3rem 100px;
+    padding: 3rem 6.25rem;
 
     hr {
         border: 0;
-        height: 2px;
+        height: .125rem;
         background: #D9D9D9; 
-        margin: 35px 0; 
-    }
-}
-
-#footer-section-1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-#footer-address {
-    width: 17rem;
-}
-
-#footer-title {
-    margin-bottom: 50px;
-    font-weight: 700;
-    font-size: 24px;
-}
-.light-grey, input::placeholder {
-    color: #9F9F9F;
-}
-
-ul {
-    list-style-type: none;
-}
-
-.subtitle {
-    margin-bottom: 55px;
-}
-
-.footer-list li {
-    margin-bottom: 46px;
-}
-
-.footer-column {
-    display: flex;
-    flex-direction: column;
-}
-
-.footer-title {
-    margin-bottom: 50px;
-}
-
-.inputSubscribe {
-    width: 350px;
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-
-    input {
-        border-bottom: 1px solid black;
-        width: 250px;
-        padding: 5px;
+        margin: 2.188rem 0; 
     }
 
-    button {
-        font-size: 14px;
-        font-weight: 500;
-        background: none;
-        border-bottom: 1px solid black;
-        transition: all .2s ease;
-        cursor: pointer;
+    #footer-section-1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        #footer-address {
+            width: 17rem;
+
+            #footer-title {
+                margin-bottom: 3.125rem;
+                font-weight: 700;
+                font-size: 24px;
+            }
+        }
     }
+
+    .footer-column {
+        display: flex;
+        flex-direction: column;
+    
+        ul {
+            list-style-type: none;
+        }
+    
+        .subtitle {
+            margin-bottom: 3.438rem;
+        }
+    
+        .light-grey, input::placeholder {
+            color: #9F9F9F;
+        }
+    
+        .footer-list li {
+            margin-bottom: 2.875rem;
+        }
+    
+        .inputSubscribe {
+            width: 21.875rem;
+            display: flex;
+            gap: .625rem;
+            justify-content: center;
+        
+            input {
+                border-bottom: 1px solid black;
+                width: 15.625rem;
+                padding: .313rem;
+            }
+        
+            button {
+                font-size: .875rem;
+                font-weight: 500;
+                background: none;
+                border-bottom: 1px solid black;
+                transition: all .2s ease;
+                cursor: pointer;
+            }
+        }
+    
+        li a span{
+            font-weight: 500;
+        }
+    
+        #email-msg {
+            padding-left: .625rem;
+        }
+    }
+    
+    
 }
 
-.footer-column li a span{
-    font-weight: 500;
-}
-
-#email-msg {
-    padding-left: 10px;
-}

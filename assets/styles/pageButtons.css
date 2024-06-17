@@ -1,10 +1,10 @@
 #pages-buttons {
     display: flex;
-    gap: 38px;
+    gap: 2.375rem;
     justify-content: center;
     cursor: pointer;
-    margin-bottom: 100px;
-    margin-top: 70px;
+    margin-bottom: 6.25rem;
+    margin-top: 4.375rem;
 
     span {
         background-color: #F9F1E7;
@@ -14,17 +14,17 @@
     }
 
     .page-button {
-        font-size: 20px;
+        font-size: 1.25rem;
         font-weight: 400;
-        padding: 15px 24px;
-        border-radius: 10px;
+        padding: .94rem 1.5rem;
+        border-radius: .625rem;
     }
 
     #next-button {
-        font-size: 20px;
+        font-size: 1.25rem;
         font-weight: 300;
-        padding: 15px 28px;
-        border-radius: 10px;
+        padding: .94rem 1.75rem;
+        border-radius: .625rem;
     }
 
     .current-page {

@@ -2,9 +2,8 @@
     max-width: 100vw;
     background-color: #FAF3EA;
     display: flex;
-    padding: 23px 98px;
-    margin-bottom: 46px ;
-
+    padding: 1.44rem 6.125rem;
+    margin-bottom: 2.875rem ;
     justify-content: space-between;
     align-items: center;
 
@@ -14,7 +13,7 @@
     
         .filter {
             display: flex;
-            gap: 12px; 
+            gap: 0.75rem; 
             cursor: pointer;
             
             span{
@@ -27,19 +26,19 @@
             font-size: 16px;
             font-weight: 400;
             border-left: 2px solid #9F9F9F;
-            padding-left: 36px;
-            margin-left: 36px ;
+            padding-left: 2.25rem;
+            margin-left: 2.25rem ;
         }
     }
 
     .quantity-input {
         display: flex;
         align-items: center;
-        gap: 17px;
+        gap: 1rem;
 
         .input-number{
-            width: 55px;
-            height: 55px;
+            width: 3.44rem;
+            height: 3.44rem;
             text-align: center;
         }
 
@@ -63,12 +62,12 @@
         display: none;
         position: absolute;
         background-color: white;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        box-shadow: 0 .5rem 1rem 0 rgba(0,0,0,0.5);
         z-index: 1;
 
         a {
             color: black;
-            padding: 12px 16px;
+            padding: .75rem 1rem;
             background-color: white;
             text-decoration: none;
             display: block;

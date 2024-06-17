@@ -4,86 +4,90 @@
     flex-wrap: wrap;
     gap: 16px;
     justify-content: center;
-}
 
-.product {
-    position: relative;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    overflow: hidden;
-    max-width: 300px;
-    margin: 16px;
+    .product {
+        position: relative;
+        overflow: hidden;
+        max-width: 18.7rem;
+        margin: 16px;
 
-    img {
-        width: 100%;
-        height: auto;
-    }
-
-    .details{
-        padding: 16px;
-        text-align:left;
-
-        h2{
-            font-size: 1.5em;
-            margin: 8px 0;
+        .image-container {
+            height:19.25rem;
         }
-
-        p{
-            color: #555;
-            margin: 4px 0;
+    
+        img {
+            width: auto;
+            height: 100%;
         }
-
-        .price{
-            font-size: 1.2em;
-            font-weight: bold;
+    
+        .details{
+            padding: 16px;
+            text-align:left;
+            background-color: #F4F5F7;
+    
+            h2{
+                font-size: 1.5em;
+                margin: .5rem 0;
+            }
+    
+            p{
+                color: #555;
+                margin: 0.25rem 0;
+            }
+    
+            .price{
+                font-size: 20px;
+                font-weight: 600;
+                color: black;
+            }
+    
+            .prices{
+                display: flex;
+                align-items: baseline;
+            }
+    
+            .discount{
+                color: #B0B0B0;
+                font-size: 16px;
+                font-weight: 400;
+                text-decoration: line-through;
+                margin-left: .5rem;
+            }
         }
-
-        .prices{
-            display: flex;
-            align-items: baseline;
-        }
-
-        .discount{
-            color: #B0B0B0;
+    
+        .discount-badge {
             font-size: 16px;
-            font-weight: 400;
-            text-decoration: line-through;
-            margin-left: 8px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50% ;
+            background-color: #E97171;
+            color: white;
+            position: absolute;
+            top: 1.25rem;
+            right: 1.25rem;
+        }
+       
+        .condition-badge {
+            font-size: 16px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50% ;
+            background-color:  #2EC1AC;
+            color: white;
+            position: absolute;
+            top: 1.25rem;
+            right: 1.25rem;
         }
     }
-
-    .discount-badge {
-        font-size: 16px;
-        font-weight: 500;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 48px;
-        height: 48px;
-        border-radius: 50% ;
-        background-color: #E97171;
-        color: white;
-        position: absolute;
-        top: 20px;
-        right: 20px;
-    }
-   
-    .condition-badge {
-        font-size: 16px;
-        font-weight: 500;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 48px;
-        height: 48px;
-        border-radius: 50% ;
-        background-color:  #2EC1AC;
-        color: white;
-        position: absolute;
-        top: 20px;
-        right: 20px;
-    }
 }
-
 
 .card-overlay {
     position: absolute;
@@ -120,17 +124,17 @@
 }
 
 .details-btn {
-    width: 202px;
+    width: 12.625rem;
     background-color: white;
     color: #B88E2F;
     border: none;
-    padding: 12px;
-    margin-bottom: 20px;
+    padding: .75rem;
+    margin-bottom: 1.25rem;
     cursor: pointer;
     font-size: 16px;
 }
 
 .actions span {
-    margin: 5px 0;
+    margin: .31rem 0;
     cursor: pointer;
 }
