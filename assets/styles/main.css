@@ -54,6 +54,7 @@ main {
 
         .banner {
             height: 10rem ;
+            overflow: hidden;
             
             #main-img {
                 height: 100%;
