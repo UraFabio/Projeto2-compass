@@ -13,21 +13,19 @@ let products = [];
 let limit = 16;
 let page = 1;
 let maxPage;
-// Função para buscar produtos
-function buscarProdutos() {
-    return __awaiter(this, void 0, void 0, function* () {
-        const response = yield fetch('./produtos.json');
-        const data = yield response.json();
-        return data;
-    });
-}
-// Função para inicializar a aplicação
 function init() {
     return __awaiter(this, void 0, void 0, function* () {
         products = yield buscarProdutos();
         carregarBotoes(products.length);
         mostrarProdutos(products);
         setupPageButtons();
+    });
+}
+function buscarProdutos() {
+    return __awaiter(this, void 0, void 0, function* () {
+        const response = yield fetch('./produtos.json');
+        const data = yield response.json();
+        return data;
     });
 }
 function carregarBotoes(pl) {
@@ -52,7 +50,6 @@ function carregarBotoes(pl) {
     element.appendChild(buttonElement);
     setupPageButtons();
 }
-// Função para mostrar produtos
 function mostrarProdutos(produtos, limit = 16, page = 1) {
     const quantity = produtos.length;
     const element = document.getElementById('showing');
@@ -96,24 +93,34 @@ function mostrarProdutos(produtos, limit = 16, page = 1) {
         container.appendChild(productElement);
     }
 }
-// Função para formatar preços
 function formatarPreco(numero) {
-    return numero.toLocaleString('id-ID');
+    let partes = numero.toString().split('');
+    let resultado = [];
+    let contador = 0;
+    for (let i = partes.length - 1; i >= 0; i--) {
+        resultado.unshift(partes[i]);
+        contador++;
+        if (contador % 3 === 0 && i !== 0) {
+            resultado.unshift('.');
+        }
+    }
+    return resultado.join('');
 }
-// Função para alternar dropdown
 function toggleDropdown() {
     const dropdown = document.getElementById('dropdown');
     if (dropdown) {
         dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
     }
 }
-// Função para ordenar produtos por ordem alfabética
 function sortAlphabetically() {
     console.log('Ordenar por ordem alfabética');
-    products = products.slice().sort((a, b) => a.name.localeCompare(b.name));
-    mostrarProdutos(products, limit);
+    products = products.slice().sort((a, b) => {
+        if (a.name.toUpperCase() > b.name.toUpperCase())
+            return 1;
+        return -1;
+    });
+    mostrarProdutos(products, limit, page);
 }
-// Função para ordenar produtos por preço
 function sortByPrice() {
     console.log('Ordenar por preço (maior para menor)');
     products = products.slice().sort((a, b) => {
@@ -121,9 +128,8 @@ function sortByPrice() {
         const precoB = b.discount ? b.price * (1 - b.discount / 100) : b.price;
         return precoB - precoA;
     });
-    mostrarProdutos(products, limit);
+    mostrarProdutos(products, limit, page);
 }
-// Eventos de clique para os filtros
 (_a = document.getElementById('filterID')) === null || _a === void 0 ? void 0 : _a.addEventListener('click', toggleDropdown);
 (_b = document.getElementById('sort-alphabetically')) === null || _b === void 0 ? void 0 : _b.addEventListener('click', (event) => {
     event.preventDefault();
@@ -143,7 +149,6 @@ function sortByPrice() {
     const element2 = document.getElementById('sort-alphabetically');
     element2.style.backgroundColor = 'white';
 });
-// Adicionando evento ao input número
 const inputNumero = document.getElementById('input-number');
 inputNumero === null || inputNumero === void 0 ? void 0 : inputNumero.addEventListener('input', () => {
     const valor = Number(inputNumero.value);
@@ -151,7 +156,7 @@ inputNumero === null || inputNumero === void 0 ? void 0 : inputNumero.addEventLi
     setTimeout(() => {
         if (limit === valor) {
             console.log('Novo valor do input:', valor);
-            mostrarProdutos(products, valor);
+            mostrarProdutos(products, valor, page);
             carregarBotoes(products.length);
         }
     }, 800);
@@ -176,12 +181,6 @@ function setupPageButtons() {
                 currentPage.classList.remove('current-page');
                 nextPage.click();
             }
-        }
-        else if (pageButtons.length > 0) {
-            // If no current page, activate the first page button
-            const firstButton = pageButtons[0];
-            firstButton.classList.add('current-page');
-            firstButton.click();
         }
     });
 }
