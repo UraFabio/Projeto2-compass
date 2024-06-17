@@ -87,9 +87,9 @@ function mostrarProdutos(produtos, limit = 16, page = 1) {
             <div class="card-overlay">
                 <button class="details-btn">See Details</button>
                 <div class="actions">
-                    <span>Share</span>
-                    <span>Compare</span>
-                    <span>Like</span>
+                    <span><img src="./assets/icons/share.svg"/>Share</span>
+                    <span><img src="./assets/icons/compare.svg"/>Compare</span>
+                    <span><img src="./assets/icons/like.svg"/>Like</span>
                 </div>
             </div>
         `;

@@ -39,6 +39,7 @@
 
         .prices{
             display: flex;
+            align-items: baseline;
         }
 
         .discount{
@@ -48,6 +49,38 @@
             text-decoration: line-through;
             margin-left: 8px;
         }
+    }
+
+    .discount-badge {
+        font-size: 16px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 48px;
+        height: 48px;
+        border-radius: 50% ;
+        background-color: #E97171;
+        color: white;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+   
+    .condition-badge {
+        font-size: 16px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 48px;
+        height: 48px;
+        border-radius: 50% ;
+        background-color:  #2EC1AC;
+        color: white;
+        position: absolute;
+        top: 20px;
+        right: 20px;
     }
 }
 
@@ -66,6 +99,20 @@
     align-items: center;
     opacity: 0;
     transition: opacity 0.3s ease;
+
+    .actions {
+        display: flex;
+        gap: 20px;
+        width: 252px;
+        height: 24px;
+
+        span {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2px;
+        }
+    }
 }
 
 .product:hover .card-overlay {
@@ -73,14 +120,14 @@
 }
 
 .details-btn {
+    width: 202px;
     background-color: white;
     color: #B88E2F;
     border: none;
-    padding: 10px 20px;
+    padding: 12px;
     margin-bottom: 20px;
     cursor: pointer;
     font-size: 16px;
-    border-radius: 5px;
 }
 
 .actions span {
