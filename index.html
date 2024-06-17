@@ -54,15 +54,21 @@
 
         <div id="banner-2">
             <div id="banner-2-section-1">
-                <div class="filter">
-                    <img src="./assets/icons/filter.svg" alt="">
-                    <span>Filter</span>
+                <div class="filter-dropdown">
+                    <div id="filterID" class="filter">
+                        <img src="./assets/icons/filter.svg" alt="">
+                        <span>Filter</span>
+                    </div>
+                    <div id="dropdown">
+                        <a href="#" id="sort-alphabetically">Ordenar por ordem alfabética</a>
+                        <a href="#" id="sort-by-price">Ordenar por preço (maior para menor)</a>
+                    </div>
                 </div>
-                <span class="results">Showing 1-16 of 32 results</span>
+                <span id="showing" class="showing">Showing {show-min}-{show-max} of {total} results</span>
             </div>
-            <div>
+            <div class="quantity-input">
                 <span>Show</span>
-                <input class="input-number" type="number" value="16">
+                <input id="input-number" class="input-number" type="number" placeholder="16">
             </div>
         </div>
 
@@ -151,5 +157,4 @@
     <script src="./dist/scripts/app.js"></script>
     <script src="./dist/scripts/emailValidator.js"></script>
 </body>
-
 </html>
