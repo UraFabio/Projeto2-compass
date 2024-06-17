@@ -1,0 +1,34 @@
+#pages-buttons {
+    display: flex;
+    gap: 38px;
+    justify-content: center;
+    cursor: pointer;
+    margin-bottom: 100px;
+    margin-top: 70px;
+
+    span {
+        background-color: #F9F1E7;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .page-button {
+        font-size: 20px;
+        font-weight: 400;
+        padding: 15px 24px;
+        border-radius: 10px;
+    }
+
+    #next-button {
+        font-size: 20px;
+        font-weight: 300;
+        padding: 15px 28px;
+        border-radius: 10px;
+    }
+
+    .current-page {
+        background-color: #B88E2F;
+        color: white;
+    }
+}
