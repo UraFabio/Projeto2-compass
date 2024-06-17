@@ -73,12 +73,17 @@
             display: block;
         }
     }
-    
-
-    
-
-    
 }  
 
+@media only screen and (max-width: 650px) {
+    main{
+        #banner-2 {
+            padding: 2rem;
+            gap: 1rem;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
 
 

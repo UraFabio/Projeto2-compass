@@ -22,7 +22,6 @@ header {
 
         .nav-list {
             display: flex;
-            flex-direction: row;
             align-items: center;
             list-style-type: none;
             justify-content: space-between;
@@ -47,3 +46,29 @@ header {
 
 
 
+@media only screen and (max-width: 1050px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 3rem 0;
+        gap: 2rem;
+        padding: 0;
+
+        nav {
+
+            .nav-list {
+                max-width: 100%;
+                gap: 1rem;
+            }
+
+            .nav-icons {
+                max-width: 100%;
+                gap: 3rem;
+            }
+        } 
+
+        
+    }
+}

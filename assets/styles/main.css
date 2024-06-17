@@ -49,3 +49,16 @@ main {
     }
 }
 
+@media only screen and (max-width: 580px){
+    main {
+
+        .banner {
+            height: 10rem ;
+            
+            #main-img {
+                height: 100%;
+                width: auto;
+            }
+        }
+    }
+}

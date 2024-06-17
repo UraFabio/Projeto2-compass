@@ -10,9 +10,8 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 var _a, _b, _c;
 let products = [];
-let limit = 16;
-let page = 1;
-let maxPage;
+sessionStorage.setItem('limit', '16');
+sessionStorage.setItem('page', '1');
 function init() {
     return __awaiter(this, void 0, void 0, function* () {
         products = yield buscarProdutos();
@@ -29,8 +28,9 @@ function buscarProdutos() {
     });
 }
 function carregarBotoes(pl) {
-    const qtdBtn = pl % limit > 0 ? Math.floor(pl / limit) + 1 : pl / limit;
-    maxPage = qtdBtn;
+    const limit = Number(sessionStorage.getItem('limit'));
+    const qtdBtn = Math.ceil(pl / limit);
+    sessionStorage.setItem('maxPage', qtdBtn.toString());
     const element = document.getElementById('pages-buttons');
     if (!element)
         return;
@@ -51,6 +51,8 @@ function carregarBotoes(pl) {
     setupPageButtons();
 }
 function mostrarProdutos(produtos, limit = 16, page = 1) {
+    limit = limit == 0 ? 16 : limit;
+    console.log(limit);
     const quantity = produtos.length;
     const element = document.getElementById('showing');
     if (element) {
@@ -119,7 +121,7 @@ function sortAlphabetically() {
             return 1;
         return -1;
     });
-    mostrarProdutos(products, limit, page);
+    mostrarProdutos(products, Number(sessionStorage.getItem('limit')), Number(sessionStorage.getItem('page')));
 }
 function sortByPrice() {
     console.log('Ordenar por preço (maior para menor)');
@@ -128,7 +130,7 @@ function sortByPrice() {
         const precoB = b.discount ? b.price * (1 - b.discount / 100) : b.price;
         return precoB - precoA;
     });
-    mostrarProdutos(products, limit, page);
+    mostrarProdutos(products, Number(sessionStorage.getItem('limit')), Number(sessionStorage.getItem('page')));
 }
 (_a = document.getElementById('filterID')) === null || _a === void 0 ? void 0 : _a.addEventListener('click', toggleDropdown);
 (_b = document.getElementById('sort-alphabetically')) === null || _b === void 0 ? void 0 : _b.addEventListener('click', (event) => {
@@ -151,12 +153,12 @@ function sortByPrice() {
 });
 const inputNumero = document.getElementById('input-number');
 inputNumero === null || inputNumero === void 0 ? void 0 : inputNumero.addEventListener('input', () => {
-    const valor = Number(inputNumero.value);
-    limit = valor;
+    const valor = Number(inputNumero.value) == 0 ? 16 : Number(inputNumero.value);
+    sessionStorage.setItem('limit', valor.toString());
     setTimeout(() => {
-        if (limit === valor) {
+        if (sessionStorage.getItem('limit') == valor.toString()) {
             console.log('Novo valor do input:', valor);
-            mostrarProdutos(products, valor, page);
+            mostrarProdutos(products, valor, Number(sessionStorage.getItem('page')));
             carregarBotoes(products.length);
         }
     }, 800);
@@ -167,8 +169,8 @@ function setupPageButtons() {
         button.addEventListener('click', () => {
             pageButtons.forEach(btn => btn.classList.remove('current-page'));
             button.classList.add('current-page');
-            page = Number(button.innerHTML);
-            mostrarProdutos(products, limit, page);
+            sessionStorage.setItem('page', button.innerHTML);
+            mostrarProdutos(products, Number(sessionStorage.getItem('limit')), Number(sessionStorage.getItem('page')));
         });
     });
     const nextButton = document.getElementById('next-button');

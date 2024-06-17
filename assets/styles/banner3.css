@@ -12,6 +12,11 @@
             display: flex;
             gap: .625rem;
 
+            img {
+                max-width: 3.81rem;
+                max-height: 3.81rem;
+            }
+
             .title-banner-3 {
                 font-size: 25px;
                 font-weight: 600;
@@ -26,5 +31,21 @@
     }
 }
 
+@media only screen and (min-width: 1500px) {
+    #banner-3 ul{
+        justify-content: space-between;
+    }
+}
 
+@media only screen and (max-width: 970px) {
+    #banner-3 {
+        max-height: 500px;
+        
+        ul{
+            display: flex;
+            flex-direction: column;
+            
+        }
+    }
+}
 
